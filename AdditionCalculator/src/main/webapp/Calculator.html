@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Add Two Numbers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            padding: 50px;
+            text-align: center;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            display: inline-block;
+            width: 350px;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 30px;
+        }
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 15px;
+            width: 100%;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        .operator {
+            font-size: 24px;
+            font-weight: bold;
+            color: #3498db;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>➕ Add Two Numbers</h1>
+        <form action="AddServlet" method="post">
+            <input type="number" name="num1" placeholder="Enter first number" required step="any">
+            <div class="operator">+</div>
+            <input type="number" name="num2" placeholder="Enter second number" required step="any">
+            <button type="submit">Calculate Sum</button>
+        </form>
+    </div>
+</body>
+</html>
